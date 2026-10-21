@@ -2,6 +2,8 @@
 
 A standalone browser-based listening practice tool inspired by the publicly documented Harman “How to Listen” exercises. It is an independent implementation and is not affiliated with or endorsed by Harman.
 
+**Live demo / 在线体验：** [Open Listening Lab](https://ivalynifmuse.github.io/ZhenEarTrain/)
+
 [简体中文说明](#简体中文)
 
 ## Features
@@ -15,7 +17,7 @@ A standalone browser-based listening practice tool inspired by the publicly docu
 
 ## Publish with GitHub Pages
 
-The included GitHub Actions workflow deploys the root `index.html` after pushes to `main`. After creating the repository, enable GitHub Pages in **Settings → Pages** and select **GitHub Actions** as the build and deployment source. The first successful workflow run publishes the site at `https://<owner>.github.io/<repository>/`.
+The included GitHub Actions workflow deploys the root `index.html` after pushes to `main`. GitHub Pages is enabled for this repository and the current site is available at <https://ivalynifmuse.github.io/ZhenEarTrain/>. For a fork, enable GitHub Pages in **Settings → Pages** and select **GitHub Actions** as the build and deployment source.
 
 ## Run locally
 
@@ -62,7 +64,7 @@ Listening Lab 是一个独立的浏览器听音训练工具，参考了 Harman �
 
 ### 使用 GitHub Pages 发布
 
-仓库中的 GitHub Actions 工作流会在推送到 `main` 后发布根目录的 `index.html`。创建仓库后，在 **Settings → Pages** 中将构建与部署来源设为 **GitHub Actions**。首次工作流成功后，可通过 `https://<owner>.github.io/<repository>/` 访问。
+仓库中的 GitHub Actions 工作流会在推送到 `main` 后发布根目录的 `index.html`。本仓库已启用 GitHub Pages，可直接访问 <https://ivalynifmuse.github.io/ZhenEarTrain/>。复制仓库后，请在 **Settings → Pages** 中将构建与部署来源设为 **GitHub Actions**。
 
 ### 本地运行
 
