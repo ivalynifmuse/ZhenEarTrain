@@ -4,9 +4,13 @@ Notable project changes are recorded here. Entries are grouped by date and use *
 
 ## 2026-10-21
 
+### Changed
+
+- Renamed the English brand from **ZhenEar** to **JaNear**, including the page title, wordmark, manual, and README.
+
 ### Added
 
-- Renamed the app **臻耳朵训练室 / ZhenEar Listening Lab** and added a bilingual user manual in About & Settings covering exercises, metrics, app-only difficulty levels, spatial limits, and standards-backed terminology.
+- Renamed the app **臻耳朵训练室 / JaNear Listening Lab** and added a bilingual user manual in About & Settings covering exercises, metrics, app-only difficulty levels, spatial limits, and standards-backed terminology.
 - Added reference links and definitions informed by ITU-R BS.1116-3, ITU-T P.811, ISO 532-2, ISO 266, and IEC 61260-1. Clarified that low/mid/high have no universal cutoffs for every task and that this app does not define certified grades.
 - Expanded the band-identification choices to preferred one-third-octave center frequencies from 31.5 Hz to 16 kHz.
 - Maintained the bilingual Chinese/English interface, multiple listening exercise types, local practice history, generated noise, and support for user-selected local audio.

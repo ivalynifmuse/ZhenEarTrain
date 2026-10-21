@@ -1,8 +1,8 @@
-# 臻耳朵训练室 | ZhenEar Listening Lab
+# 臻耳朵训练室 | JaNear Listening Lab
 
 A standalone browser-based listening practice tool inspired by the publicly documented Harman “How to Listen” exercises. It is an independent implementation and is not affiliated with or endorsed by Harman.
 
-**Live demo / 在线体验：** [Open ZhenEar Listening Lab](https://ivalynifmuse.github.io/ZhenEarTrain/)
+**Live demo / 在线体验：** [Open JaNear Listening Lab](https://ivalynifmuse.github.io/ZhenEarTrain/)
 
 [简体中文说明](#简体中文)
 
@@ -46,7 +46,7 @@ This is a single-file prototype. Its task levels and adaptive rules are original
 
 This project was independently developed with AI-assisted “vibe coding” after the author found that the Harman “How to Listen” desktop application would no longer run on their Mac after upgrading to macOS Tahoe. Its exercise ideas, task flow, and training approach draw substantially on Harman “How to Listen”; this project is an unofficial, independent web implementation. It does not include Harman’s source code, installer, original music tracks, or other proprietary assets, and it is not affiliated with, endorsed by, or certified by Harman. “Harman” and “How to Listen” are used only to identify the source of inspiration and remain the property of their respective owners.
 
-ZhenEar Listening Lab includes an independent horizontal stereo-image localization exercise. It does not claim to measure front/back, elevation, distance, or individualized-HRTF localization. See the in-app user manual for measurement limits and standards references.
+JaNear Listening Lab includes an independent horizontal stereo-image localization exercise. It does not claim to measure front/back, elevation, distance, or individualized-HRTF localization. See the in-app user manual for measurement limits and standards references.
 
 ## License
 
@@ -54,7 +54,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE). The lice
 
 ## 简体中文
 
-臻耳朵训练室（ZhenEar Listening Lab）是一个独立的浏览器听音训练工具，参考了 Harman 公开介绍的听音训练任务。它不是 Harman 官方产品，也未获其背书。
+臻耳朵训练室（JaNear Listening Lab）是一个独立的浏览器听音训练工具，参考了 Harman 公开介绍的听音训练任务。它不是 Harman 官方产品，也未获其背书。
 
 ### 功能
 
