@@ -6,7 +6,10 @@ Notable project changes are recorded here. Entries are grouped by date and use *
 
 ### Added
 
-- Reworked Spatial Mapping into a replayable candidate-ranking task: listeners drag multiple panned candidates into left-to-right order. Level 1 starts with 3 candidates, adding one per level to 12; scoring uses pairwise ordering accuracy. Counts and scoring are JANEAR-defined, not a claimed Harman level schedule.
+- Added a Formal Test section with independently selected objective tasks. Each task starts at Level 1, uses five trials per level, advances at four correct answers, and stops at the first failed level or after Level 12. Spatial trials require at least 80% pairwise ordering accuracy to count as correct; preference ratings are excluded.
+- Added per-task manual Level 1–12 selection for training, alongside adaptive difficulty.
+- Replaced spatial candidate cards with a compact horizontal player axis of draggable A–N markers. Clicking a marker toggles its audio; dragging changes rank and snaps markers to evenly spaced positions.
+- Reworked Spatial Mapping into a replayable candidate-ranking task: listeners drag multiple panned candidates into left-to-right order. Level 1 starts with 3 candidates, adding one per level to 14 at Level 12; scoring uses pairwise ordering accuracy. Counts and scoring are JANEAR-defined, not a claimed Harman level schedule.
 - Added a lossless ODAQ training excerpt (`26_claves/reference.wav`, CC0) to the material library, with download access and source/license details.
 - Added a bilingual user manual in About & Settings covering exercises, metrics, app-only difficulty levels, spatial limits, and standards-backed terminology.
 - Added reference links and definitions informed by ITU-R BS.1116-3, ITU-T P.811, ISO 532-2, ISO 266, and IEC 61260-1. Clarified that low/mid/high have no universal cutoffs for every task and that this app does not define certified grades.

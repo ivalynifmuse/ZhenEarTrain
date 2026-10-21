@@ -1,105 +1,22 @@
 # 臻耳朵训练室 | JANEAR Listening Lab
 
-A standalone browser-based listening practice tool inspired by the publicly documented Harman “How to Listen” exercises. It is an independent implementation and is not affiliated with or endorsed by Harman.
+臻耳朵训练室（JANEAR Listening Lab）是一款可在现代浏览器中运行的双语听音训练与测试工具。它独立实现了多种听辨练习，并提供可调难度、正式分级测试和左右声像排序。无需安装、账号或后端。
 
-**Live demo / 在线体验：** [Open JANEAR Listening Lab](https://ivalynifmuse.github.io/ZhenEarTrain/)
+**在线使用：** [打开 JANEAR Listening Lab](https://ivalynifmuse.github.io/ZhenEarTrain/)
 
-[简体中文说明](#简体中文)
+## 功能
 
-[Changelog / 更新日志](CHANGELOG.md)
+- **频段辨识：** 听辨 EQ 峰值、凹陷、低通和高通变化，可选粉噪、白噪或本地音频。
+- **声音属性判断：** 练习明亮度、丰满度、染色、混响、噪声、哼声及左右平衡。
+- **频谱轮廓匹配：** 根据听感辨识低频、高频和中频变化。
+- **水平声像排序：** 点击 A–N 标记试听或停止，拖动标记排列多个声像的左右顺序。
+- **偏好评分：** 记录对 A/B 音频的主观偏好。
+- **训练难度：** 各训练项目可手动选择 Level 1–12，或使用自适应难度。
+- **正式测试：** 自选客观测试项目；每项从 Level 1 开始，每级 5 题，答对 4 题晋级，最高 Level 12。空间题按两两排序准确率计分；偏好评分不纳入测试。
+- **双语界面与用户手册：** 支持简体中文和 English；练习记录保存在当前浏览器。
 
-## Features
+正式测试等级、晋级门槛及空间候选数量均为 JANEAR 自定义规则，不代表 Harman 官方等级或认证。空间练习只评左右相对顺序，不测前后或垂直定位。
 
-- Band identification with peak, dip, low-pass, and high-pass filters
-- Attribute, spectral profile, spatial mapping, and preference exercises
-- Practice and session modes, adaptive task difficulty, local history
-- Pink noise, white noise, an openly licensed ODAQ training excerpt, and user-selected local audio
-- Simplified Chinese and English interface
-- In-app bilingual manual with standards references and explicit measurement limits
-- No build step, backend, account, or upload required
+## 灵感与权利说明
 
-## Publish with GitHub Pages
-
-The included GitHub Actions workflow deploys the root `index.html` after pushes to `main`. GitHub Pages is enabled for this repository and the current site is available at <https://ivalynifmuse.github.io/ZhenEarTrain/>. For a fork, enable GitHub Pages in **Settings → Pages** and select **GitHub Actions** as the build and deployment source.
-
-## Run locally
-
-Open `index.html` in a current Safari, Chrome, Firefox, or Edge browser. Start playback from a page control so the browser can enable audio. Audio files selected by the user are decoded locally. Progress is stored in that browser’s local storage.
-
-For local web-server testing, run:
-
-```sh
-python3 -m http.server 8000
-```
-
-Then visit <http://localhost:8000>.
-
-## Privacy and audio
-
-The app has no analytics, network calls, or backend. Imported audio is not uploaded. Playback depends on the browser, operating system, output device, and listening level; this tool does not calibrate sound pressure or certify hearing ability.
-
-## Project status
-
-This is a single-file prototype. Its task levels and adaptive rules are original approximations and do not reproduce Harman’s internal algorithms or constitute Harman certification. The original Harman music tracks and installer contents are not included. Use audio you have permission to use.
-
-## Included audio material
-
-The material library includes the 10-second ODAQ training excerpt `assets/odaq-26-claves-reference.wav` (48 kHz, 16-bit stereo PCM). ODAQ identifies the source as `26_claves.wav`, a solo wooden claves recording by Samuel Gremaud, released under CC0; ODAQ’s training copy is cut, repeated, scaled, and processed. This excerpt is a freely reusable listening stimulus, not a Harman track or an official Harman test standard. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for provenance and the ODAQ citation.
-
-## Acknowledgements, inspiration, and rights
-
-This project was independently developed with AI-assisted “vibe coding” after the author found that the Harman “How to Listen” desktop application would no longer run on their Mac after upgrading to macOS Tahoe. Its exercise ideas, task flow, and training approach draw substantially on Harman “How to Listen”; this project is an unofficial, independent web implementation. It does not include Harman’s source code, installer, original music tracks, or other proprietary assets, and it is not affiliated with, endorsed by, or certified by Harman. “Harman” and “How to Listen” are used only to identify the source of inspiration and remain the property of their respective owners.
-
-JANEAR Listening Lab includes a horizontal stereo-image ranking exercise. Listeners can replay each panned candidate and drag candidates into left-to-right order on a horizontal axis. Level 1 has 3 candidates; each higher app level adds one, up to 12. Trials are scored by pairwise ordering accuracy (80% or higher passes). The level counts and scoring are JANEAR-defined, not Harman settings or an international standard. Research supports the general difficulty trend as the number of sources rises and spacing shrinks, but does not prescribe this schedule. The app does not claim to measure front/back, elevation, distance, or individualized-HRTF localization. See the in-app user manual for limits and references.
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE). The license applies to this project’s original code, not to Harman trademarks, installers, or third-party audio.
-
-## 简体中文
-
-臻耳朵训练室（JANEAR Listening Lab）是一个独立的浏览器听音训练工具，参考了 Harman 公开介绍的听音训练任务。它不是 Harman 官方产品，也未获其背书。
-
-### 功能
-
-- 频段辨识：峰值、凹陷、低通与高通
-- 属性判断、频谱曲线、空间定位与偏好练习
-- Practice / Session 模式、自适应任务难度、本地历史记录
-- 粉噪、白噪、开放授权的 ODAQ 训练音频，以及用户从本机选择的音频
-- 简体中文与 English 界面
-- 内置双语用户手册，说明标准术语与测量边界
-- 无需构建工具、后端、账号或上传音频
-
-### 使用 GitHub Pages 发布
-
-仓库中的 GitHub Actions 工作流会在推送到 `main` 后发布根目录的 `index.html`。本仓库已启用 GitHub Pages，可直接访问 <https://ivalynifmuse.github.io/ZhenEarTrain/>。复制仓库后，请在 **Settings → Pages** 中将构建与部署来源设为 **GitHub Actions**。
-
-### 本地运行
-
-使用新版 Safari、Chrome、Firefox 或 Edge 打开 `index.html`。请点击页面中的播放控件以启用浏览器音频。导入的音频在本机解码；训练记录保存在当前浏览器。
-
-如需通过本地服务器运行，可执行：
-
-```sh
-python3 -m http.server 8000
-```
-
-然后访问 <http://localhost:8000>。
-
-### 隐私与音频
-
-本工具不包含分析追踪、网络请求或后端。导入的音频不会上传。播放效果受浏览器、操作系统、输出设备和音量影响；本工具不校准声压，也不认证听力能力。
-
-### 项目状态
-
-这是一个单文件原型。任务等级和自适应规则是本项目的近似实现，不复刻 Harman 内部算法，也不构成 Harman 认证。项目不包含 Harman 原版曲目或安装包内容。请使用你有权使用的音频素材。
-
-### 致谢、灵感来源与权利说明
-
-作者在升级到 macOS Tahoe 后发现 Harman「How to Listen」桌面软件无法在自己的 Mac 上运行，于是通过 AI 辅助的 vibe coding 独立开发了本网页工具。项目的练习思路、任务流程和训练方式大量参考了 Harman「How to Listen」，但这是非官方、独立实现；项目没有包含 Harman 源代码、安装包、原版音乐曲目或其他专有素材，也未获 Harman 认可、背书或认证。「Harman」和「How to Listen」仅用于说明灵感来源，相关名称及权利仍归其各自权利人所有。
-
-本项目还加入了原版项目范围之外的独立水平左右声像定位练习。该练习由本项目自行实现，不代表与 Harman 测试等同；当前版本不声称测量前后、垂直或个体化 HRTF 定位。
-
-### 许可证
-
-本项目原创代码采用 MIT 许可证，详见 [LICENSE](LICENSE)。该许可证不涵盖 Harman 商标、安装包或第三方音频素材。
+本工具的练习思路和任务流程大量参考 Harman「How to Listen」。作者在该软件无法兼容 macOS Tahoe 后，通过 AI 辅助 vibe coding 独立开发了本网页工具。JANEAR 是非官方独立实现，未获 Harman 认可或背书；本项目另加入自行实现的水平左右声像定位练习。「Harman」和「How to Listen」名称及相关权利归其权利人所有。本项目原创代码采用 MIT 许可证，第三方素材不包含在该许可证内。
