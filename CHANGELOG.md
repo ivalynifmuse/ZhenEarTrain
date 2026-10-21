@@ -16,7 +16,7 @@ Notable project changes are recorded here. Entries are grouped by date and use *
 
 - Reworked spatial localization as horizontal stereo-image localization, with normalized pan-coordinate error and app-specific tolerance. Removed the unsupported front/back and elevation interpretation.
 - Renamed A/B controls to Reference / Change for non-EQ tasks; Flat / EQ now appears only for band-identification EQ/filter trials.
-- Simplified task setup by showing attribute and filter options only when relevant and removing redundant task-category and session-test navigation. Task changes immediately refresh their matching controls, answer area, and bilingual labels.
+- Simplified task setup by showing attribute and filter options only when relevant and removing redundant task-category and session-test navigation. Task changes immediately refresh their matching controls, answer area, and bilingual labels; spatial wording stays consistent with the horizontal-only task.
 - Published the project under the MIT License for its original code and documented that third-party trademarks and audio are not covered by that license.
 - Added the direct live-demo URL to the repository metadata and README so visitors can open the app without first figuring out how to run the source file.
 
