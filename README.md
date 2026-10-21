@@ -1,8 +1,8 @@
-# 臻耳朵训练室 | JaNear Listening Lab
+# 臻耳朵训练室 | JANEAR Listening Lab
 
 A standalone browser-based listening practice tool inspired by the publicly documented Harman “How to Listen” exercises. It is an independent implementation and is not affiliated with or endorsed by Harman.
 
-**Live demo / 在线体验：** [Open JaNear Listening Lab](https://ivalynifmuse.github.io/ZhenEarTrain/)
+**Live demo / 在线体验：** [Open JANEAR Listening Lab](https://ivalynifmuse.github.io/ZhenEarTrain/)
 
 [简体中文说明](#简体中文)
 
@@ -13,7 +13,7 @@ A standalone browser-based listening practice tool inspired by the publicly docu
 - Band identification with peak, dip, low-pass, and high-pass filters
 - Attribute, spectral profile, spatial mapping, and preference exercises
 - Practice and session modes, adaptive task difficulty, local history
-- Pink noise, white noise, and user-selected local audio
+- Pink noise, white noise, an openly licensed ODAQ training excerpt, and user-selected local audio
 - Simplified Chinese and English interface
 - In-app bilingual manual with standards references and explicit measurement limits
 - No build step, backend, account, or upload required
@@ -42,11 +42,15 @@ The app has no analytics, network calls, or backend. Imported audio is not uploa
 
 This is a single-file prototype. Its task levels and adaptive rules are original approximations and do not reproduce Harman’s internal algorithms or constitute Harman certification. The original Harman music tracks and installer contents are not included. Use audio you have permission to use.
 
+## Included audio material
+
+The material library includes the 10-second ODAQ training excerpt `assets/odaq-26-claves-reference.wav` (48 kHz, 16-bit stereo PCM). ODAQ identifies the source as `26_claves.wav`, a solo wooden claves recording by Samuel Gremaud, released under CC0; ODAQ’s training copy is cut, repeated, scaled, and processed. This excerpt is a freely reusable listening stimulus, not a Harman track or an official Harman test standard. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for provenance and the ODAQ citation.
+
 ## Acknowledgements, inspiration, and rights
 
 This project was independently developed with AI-assisted “vibe coding” after the author found that the Harman “How to Listen” desktop application would no longer run on their Mac after upgrading to macOS Tahoe. Its exercise ideas, task flow, and training approach draw substantially on Harman “How to Listen”; this project is an unofficial, independent web implementation. It does not include Harman’s source code, installer, original music tracks, or other proprietary assets, and it is not affiliated with, endorsed by, or certified by Harman. “Harman” and “How to Listen” are used only to identify the source of inspiration and remain the property of their respective owners.
 
-JaNear Listening Lab includes an independent horizontal stereo-image localization exercise. It does not claim to measure front/back, elevation, distance, or individualized-HRTF localization. See the in-app user manual for measurement limits and standards references.
+JANEAR Listening Lab includes a horizontal stereo-image ranking exercise. Listeners can replay each panned candidate and drag candidates into left-to-right order on a horizontal axis. Level 1 has 3 candidates; each higher app level adds one, up to 12. Trials are scored by pairwise ordering accuracy (80% or higher passes). The level counts and scoring are JANEAR-defined, not Harman settings or an international standard. Research supports the general difficulty trend as the number of sources rises and spacing shrinks, but does not prescribe this schedule. The app does not claim to measure front/back, elevation, distance, or individualized-HRTF localization. See the in-app user manual for limits and references.
 
 ## License
 
@@ -54,14 +58,14 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE). The lice
 
 ## 简体中文
 
-臻耳朵训练室（JaNear Listening Lab）是一个独立的浏览器听音训练工具，参考了 Harman 公开介绍的听音训练任务。它不是 Harman 官方产品，也未获其背书。
+臻耳朵训练室（JANEAR Listening Lab）是一个独立的浏览器听音训练工具，参考了 Harman 公开介绍的听音训练任务。它不是 Harman 官方产品，也未获其背书。
 
 ### 功能
 
 - 频段辨识：峰值、凹陷、低通与高通
 - 属性判断、频谱曲线、空间定位与偏好练习
 - Practice / Session 模式、自适应任务难度、本地历史记录
-- 粉噪、白噪，以及用户从本机选择的音频
+- 粉噪、白噪、开放授权的 ODAQ 训练音频，以及用户从本机选择的音频
 - 简体中文与 English 界面
 - 内置双语用户手册，说明标准术语与测量边界
 - 无需构建工具、后端、账号或上传音频
