@@ -6,6 +6,8 @@ A standalone browser-based listening practice tool inspired by the publicly docu
 
 [简体中文说明](#简体中文)
 
+[Changelog / 更新日志](CHANGELOG.md)
+
 ## Features
 
 - Band identification with peak, dip, low-pass, and high-pass filters
