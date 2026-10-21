@@ -37,6 +37,12 @@ The app has no analytics, network calls, or backend. Imported audio is not uploa
 
 This is a single-file prototype. Its task levels and adaptive rules are original approximations and do not reproduce Harman’s internal algorithms or constitute Harman certification. The original Harman music tracks and installer contents are not included. Use audio you have permission to use.
 
+## Acknowledgements, inspiration, and rights
+
+This project was independently developed with AI-assisted “vibe coding” after the author found that the Harman “How to Listen” desktop application would no longer run on their Mac after upgrading to macOS Tahoe. Its exercise ideas, task flow, and training approach draw substantially on Harman “How to Listen”; this project is an unofficial, independent web implementation. It does not include Harman’s source code, installer, original music tracks, or other proprietary assets, and it is not affiliated with, endorsed by, or certified by Harman. “Harman” and “How to Listen” are used only to identify the source of inspiration and remain the property of their respective owners.
+
+Listening Lab also includes independent spatial-audio exercises beyond the original project scope, including front/back sound-image localization and discrimination. Those exercises are this project’s own implementation and do not imply equivalence to Harman’s tests.
+
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE). The license applies to this project’s original code, not to Harman trademarks, installers, or third-party audio.
@@ -77,6 +83,12 @@ python3 -m http.server 8000
 ### 项目状态
 
 这是一个单文件原型。任务等级和自适应规则是本项目的近似实现，不复刻 Harman 内部算法，也不构成 Harman 认证。项目不包含 Harman 原版曲目或安装包内容。请使用你有权使用的音频素材。
+
+### 致谢、灵感来源与权利说明
+
+作者在升级到 macOS Tahoe 后发现 Harman「How to Listen」桌面软件无法在自己的 Mac 上运行，于是通过 AI 辅助的 vibe coding 独立开发了本网页工具。项目的练习思路、任务流程和训练方式大量参考了 Harman「How to Listen」，但这是非官方、独立实现；项目没有包含 Harman 源代码、安装包、原版音乐曲目或其他专有素材，也未获 Harman 认可、背书或认证。「Harman」和「How to Listen」仅用于说明灵感来源，相关名称及权利仍归其各自权利人所有。
+
+本项目还加入了原版项目范围之外的独立空间声练习，包括前后声像定位与辨别。这些练习由本项目自行实现，不代表与 Harman 测试等同。
 
 ### 许可证
 
