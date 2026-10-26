@@ -6,6 +6,8 @@ Notable project changes are recorded here. Entries are grouped by date and use *
 
 ### Added
 
+- Added an interactive moving-source continuity exercise: paired horizontal trajectories use the same pink-noise stimulus and browser HRTF panner; five-trial rounds let listeners identify the smooth path at three jump-detection levels. Playback must complete before an answer counts.
+- Added a Spatial Audio workspace scaffold with research-screening dimensions (static localization, motion continuity, spatial acuity, externalization) and 3D mix-training lesson concepts. Includes playback-condition planning fields and an interactive horizontal motion-continuity exercise and a simple trajectory editor for start/end azimuth, curve shape and duration, using browser HRTF rendering. It does not run validated research screening or save screening data.
 - Added a Formal Test section with independently selected objective tasks. Each task starts at Level 1, uses five trials per level, advances at four correct answers, and stops at the first failed level or after Level 12. Spatial trials require at least 80% pairwise ordering accuracy to count as correct; preference ratings are excluded.
 - Added per-task manual Level 1–12 selection for training, alongside adaptive difficulty.
 - Replaced spatial candidate cards with a compact horizontal player axis of draggable A–N markers. Clicking a marker toggles its audio; dragging changes rank and snaps markers to evenly spaced positions.
@@ -27,6 +29,8 @@ Notable project changes are recorded here. Entries are grouped by date and use *
 
 ### Fixed
 
+- Limited Band ID answer choices to a level-specific set of center frequencies (3 at Level 1, increasing to all 28 at Level 12), and selected each trial target only from the frequencies shown for that level.
+- Removed the inspiration and rights section from the README as requested.
 - Replaced the previous single-position choice with relative-order scoring, so small placement errors do not count as a full-trial miss. The spatial task hides the generic A/B transport controls and offers per-candidate playback.
 - Added explicit stop controls for generated library previews and made the 60 Hz hum preview a finite, audible signal with low-order harmonics.
 - Corrected inaccurate claims that two-dimensional screen clicks measured front/back localization. Documented browser, headphone, and calibration limits.
